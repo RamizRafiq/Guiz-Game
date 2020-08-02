@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+</head>
+<body class="body">
+    <div class="container-fluid">
+        <h1 class="quiz">Quiz Game</h1>
+
+<div id="userName">
+<input type="text" name="" id="input" placeholder="Type Your Name">
+<input type="button" value="Start" onclick="start()" id="start" href="javascript:void(0)">
+
+</div>
+
+<!-- Quiz -->
+<div id="Main" class="hide1" >
+<!-- <h1 >QUIZ</h1> -->
+<div id="main1" >
+<h3>Welcome</h3>
+<h3>00:<span id="seconds">30</span> </h3>
+</div>
+<div id="main2">
+
+<p id="Question">What is your name?</p>
+<div id="options">
+<p id="option1" class="" onclick="putActiveclass(this)"> 1
+</p>
+<p id="option2" class=""  onclick="putActiveclass(this)">  2
+</p>
+<p id="option3" class="" onclick="putActiveclass(this)"> 3
+</p>
+<p id="option4" class="" onclick="putActiveclass(this)">  4
+</p>
+</div>
+
+<button onclick="next()" class="btn1" id="next">NEXT</button>
+</div>
+</div>
+
+
+<div  id="score" >
+
+    <div id="scoreCard" class="scoreCard">
+    <img src="" alt="" id="scoreImg" >
+    <h1 id="Remarks"> <span></span>  </h1>
+    <h1>Your score is <span></span></h1>
+</div>
+    
+<img src="" alt="">
+</div>
+</body>
+<script src="app.js"></script>
+</html>
